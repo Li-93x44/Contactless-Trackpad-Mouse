@@ -10,4 +10,6 @@ Since watching *The Avengers* (2012) as a kid, I’ve dreamed of building real-w
 
 ## Hardware & CAD Design
 * **Enclosure:** Modeled using lightweight, open-source local CAD software (SolidCraft) running on an integrated-GPU laptop, featuring a 2.0 mm wall thickness and optimized internal clearances.
+![CAD Enclosure Assembly](IMG/Screenshot 2026-11-07 144040.png)
+![Physical Build Photo](IMG/Screenshot 2026-11-05 204625.png)
 * **Electronics Assembly:** Direct-to-perfboard/breadboard soldered architecture prioritizing reliability and durability.
