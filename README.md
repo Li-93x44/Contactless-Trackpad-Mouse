@@ -13,3 +13,4 @@ Since watching *The Avengers* (2012) as a kid, I’ve dreamed of building real-w
 ![CAD Enclosure Assembly](IMG/cad-assembly.png.png)
 ![Physical Build Photo](IMG/build-photo.png.png)
 * **Electronics Assembly:** Direct-to-perfboard/breadboard soldered architecture prioritizing reliability and durability.
+![Schematics Virtual Assembly](IMG/Wokwi_Schematics.png)
