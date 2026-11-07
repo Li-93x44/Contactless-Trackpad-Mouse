@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -108.6, "left": -189.2, "attrs": {} },
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 121.65, "left": -188.4, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": 234.22, "left": -74.48, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 108.74,
+      "left": 48.23,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    { "type": "wokwi-ds1307", "id": "rtc1", "top": 119.4, "left": -86.3, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:3V3", "bb1:bp.1", "red", [ "h0" ] ],
+    [ "rtc1:5V", "bb1:bp.2", "red", [ "h0" ] ],
+    [ "imu1:VCC", "bb1:bp.3", "red", [ "h-95.92", "v-134.4", "h-40" ] ],
+    [ "oled1:VCC", "bb1:bp.4", "red", [ "v-9.6", "h-222.25" ] ],
+    [ "pico:GND.1", "bb1:bn.6", "black", [ "h0" ] ],
+    [ "rtc1:GND", "bb1:bn.7", "black", [ "h0" ] ],
+    [ "imu1:GND", "bb1:bn.8", "black", [ "h-76.72", "v-124.8", "h8" ] ],
+    [ "oled1:GND", "bb1:bn.9", "black", [ "h-155.2" ] ],
+    [ "rtc1:SDA", "bb1:1b.f", "yellow", [ "h0" ] ],
+    [ "oled1:SDA", "bb1:1b.g", "yellow", [ "v0" ] ],
+    [ "pico:GP4", "bb1:1b.h", "yellow", [ "h0" ] ],
+    [ "imu1:SDA", "bb1:1b.i", "yellow", [ "v0" ] ],
+    [ "oled1:SCL", "bb1:20b.f", "blue", [ "v0" ] ],
+    [ "rtc1:SCL", "bb1:20b.g", "blue", [ "h0" ] ],
+    [ "imu1:SCL", "bb1:20b.h", "blue", [ "v0" ] ],
+    [ "pico:GP5", "bb1:20b.i", "blue", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
