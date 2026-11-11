@@ -1,1 +1,6 @@
 Project 2/
+# Ignore compressed archives and large tar files
+*.tar
+*.tar.xz
+*.zip
+*.rar
