@@ -1,5 +1,5 @@
 # Spatial Air-Mouse & Gesture Trackpad
-
+# NO CUSTOM PCB REQUIRED EVEN THOUGH SKETCHES MIGHT BE VISIBLE!!
 ## What it is & How to use it
 The Spatial Air-Mouse is a compact, wedge-shaped desktop input device designed to track motion and hand gestures in 3D space. 
 
